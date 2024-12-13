@@ -72,3 +72,6 @@ class CykloUpdateView(UpdateView):
 class CykloDeleteView(DeleteView):
     model = Cyklo
     success_url = reverse_lazy('cyklo_list')
+
+def prodejny(request):
+    return render(request, 'prodejny.html')

@@ -12,4 +12,6 @@ urlpatterns = [
     path('cyklo/create/', views.CykloCreateView.as_view(), name='cyklo-create'),
     path('cyklo/<int:pk>/update/', views.CykloUpdateView.as_view(), name='cyklo-update'),
     path('cyklo/<int:pk>/delete/', views.CykloDeleteView.as_view(), name='cyklo-delete'),
+    path('prodejny', views.prodejny, name='prodejny'),
+
 ]
